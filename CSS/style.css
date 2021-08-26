@@ -1,0 +1,391 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+}
+.nav-navbar {
+  display: flex;
+  padding: 40px 40px;
+  background-color: #ff6f61;
+  justify-content: center;
+}
+
+.nav-navbar ul {
+  display: flex;
+  list-style: none;
+  padding-top: 10px;
+}
+
+.nav-navbar ul li a {
+  text-decoration: none;
+  padding: 0px 25px;
+  color: #fffff0;
+  font-size: 1.3em;
+  font-family: "B612", sans-serif;
+}
+
+.nav-navbar ul li a:hover {
+  color: #f0ead6;
+}
+
+.section-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.section-home::before {
+  content: "";
+  background: url(../img/bb1.jpg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+  height: 130vh;
+  width: 100%;
+  opacity: 1;
+}
+
+.section-home-div {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
+}
+
+.section-home-div h1 {
+  font-size: 5em;
+}
+
+.section-home-div p {
+  font-size: 3.5em;
+  color: white;
+}
+
+.projects {
+  padding-top: 45px;
+}
+
+.about-me {
+  padding-top: 140px;
+}
+
+.about-me h1 {
+  color: #f012be;
+  text-align: center;
+  font-family: "BioRhyme", sans-serif;
+}
+
+.about-img img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.about-me-div2 {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 40px;
+  justify-content: space-around;
+  font-size: 1.5em;
+  font-family: "B612", sans-serif;
+  align-items: center;
+}
+
+.about-me-div3 {
+  width: 500px;
+}
+
+/* Projects */
+.projects h1 {
+  color: #f012be;
+  text-align: center;
+  font-family: "B612", sans-serif;
+}
+
+.w{
+    width: 75%!important;
+}
+
+.project-title {
+  text-align: center;
+  padding: 33px 0px;
+  font-family: "Sora";
+}
+
+.sliderr {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.project-info {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.project-info p a {
+  text-decoration: none;
+}
+.project-info p {
+  font-size: 1.2em;
+  font-family: "Roboto";
+}
+
+.contact-me {
+  background-color: #7cb9e8;
+}
+
+.contact-me h1 {
+  color: #f012be;
+  text-align: center;
+  font-family: "B612", sans-serif;
+  padding: 40px 0px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  outline: none;
+  width: 521px;
+  padding: 6px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  border: none;
+  font-family: "Roboto";
+}
+
+.form label {
+  font-size: 1.3em;
+  font-family: "Roboto";
+  padding-top: 33px;
+}
+
+.form textarea {
+  width: 521px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-family: "Roboto";
+  resize: both;
+  padding: 10px;
+  height: 250px;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btns #submit {
+  margin: 33px 0px;
+  width: 133px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btns #submit:hover {
+  color: white;
+  background-color: blueviolet;
+  transition: all 0.6s ease;
+}
+
+.sm h2 {
+  text-align: center;
+  color: black;
+  padding: 33px 0px;
+}
+
+.icons {
+  text-align: center;
+  padding-bottom: 33px;
+}
+
+footer {
+  height: 15vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-home::before {
+    content: "";
+    background: url(../img/bb1.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+  }
+  .section-home-div h1 {
+    font-size: 3.5em;
+  }
+  .section-home-div p {
+    font-size: 3.2em;
+    color: black;
+  }
+
+  .w{
+      width: 75%!important;
+  }
+  .about-me-div2 {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-family: "B612", sans-serif;
+    align-items: center;
+  }
+  .about-img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  .about-me-div3 {
+    padding-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 651px) {
+    .nav-navbar{
+        padding: 40px 0px;
+    }
+    .nav-navbar ul li a {
+        padding: 0px 15px;
+    }
+    .section-home-div h1 {
+        font-size: 3.2em;
+    }
+    .section-home-div p {
+        font-size: 3em;
+        color: black;
+    }
+    .about-me-div2 {
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-around;
+        font-size: 1.2em;
+        font-family: "B612", sans-serif;
+        align-items: center;
+        flex-direction: column;
+      }
+      .about-img img {
+          width: 400px;
+          height: 400px;
+       padding-bottom: 23px;
+      }
+     
+}
+@media only screen and (max-width: 578px) {
+    /* .about-me-div3{
+        width: 400px;
+    } */
+    .nav-navbar{
+        padding: 40px 0px;
+        font-size: 0.9em;
+    }
+    .nav-navbar ul li a {
+        padding: 0px 15px;
+        font-size: 0.9em;
+    }
+  
+  .w{
+      width: 98%!important;
+  }
+  .form-input{
+      width: 400px;
+  }
+}
+
+@media only screen and (max-width: 520px){
+    .form input{
+        width: 400px;
+    }
+    .form textarea{
+        width: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .icons a img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .section-home-div p {
+        font-size: 2em;
+        color: black;
+    }
+    .section-home-div h1 {
+        font-size: 2.5em;
+        color: white;
+    }
+
+}
+
+@media only screen and (max-width: 426px){
+    .nav-navbar ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-top: 10px;
+    }
+    .nav-navbar ul li a {
+        padding: 15px 15px;
+        font-size: 1.1rem;
+    }
+    .nav-navbar{
+        padding: 0;
+    }
+    
+    .about-img img {
+        width: 300px;
+        height: 400px;
+        padding-bottom: 23px;
+    }
+    .about-me-div3{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .about-me-div3{
+        width: 300px;
+    }
+    .form input{
+        width: 300px;
+    }
+    .form textarea{
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .section-home-div p {
+        font-size: 1.5em;
+        color: black;
+    }
+    .section-home-div h1 {
+        font-size: 1.5em;
+        color: white;
+    }
+
+}
