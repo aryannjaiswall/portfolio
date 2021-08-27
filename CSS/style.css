@@ -222,14 +222,14 @@ footer {
 @media only screen and (max-width: 768px) {
   .section-home::before {
     content: "";
-    background: url(../img/bb1.jpg) no-repeat;
+    background: url(../img/bb1.jpg) no-repeat center;
     background-size: cover;
     position: absolute;
     z-index: -1;
     height: 100vh;
     width: 100%;
-    opacity: 1;
-  }
+    opacity: 0.756;
+}  
   .section-home-div h1 {
     font-size: 3.5em;
   }
@@ -291,9 +291,7 @@ footer {
      
 }
 @media only screen and (max-width: 578px) {
-    /* .about-me-div3{
-        width: 400px;
-    } */
+
     .nav-navbar{
         padding: 40px 0px;
         font-size: 0.9em;
@@ -380,12 +378,20 @@ footer {
 
 @media only screen and (max-width: 400px){
     .section-home-div p {
-        font-size: 1.5em;
+        font-size: 1.78em;
         color: black;
+        font-family: "Roboto", sans-serif;
     }
     .section-home-div h1 {
-        font-size: 1.5em;
-        color: white;
+        font-size: 2.35em;
+        color: black;
+        font-family: "Roboto", sans-serif;
     }
 
+}
+
+@media only screen and (max-width: 320px) {
+  .section-home::before {
+    width: 320px;
+}  
 }
